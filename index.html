@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Statistics Calculator</h1>
+        <div class="input-section">
+            <label for="data-input">Enter your data (comma separated):</label>
+            <input type="text" id="data-input" placeholder="e.g. 5, 10, 15, 20">
+            <button id="calculate-btn">Calculate</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+        
+        <div class="results-section">
+            <h2>Results</h2>
+            <div class="result-item">
+                <span>Mean (Average):</span>
+                <span id="mean-result">-</span>
+            </div>
+            <div class="result-item">
+                <span>Median:</span>
+                <span id="median-result">-</span>
+            </div>
+            <div class="result-item">
+                <span>Mode:</span>
+                <span id="mode-result">-</span>
+            </div>
+            <div class="result-item">
+                <span>Variance:</span>
+                <span id="variance-result">-</span>
+            </div>
+            <div class="result-item">
+                <span>Standard Deviation:</span>
+                <span id="stddev-result">-</span>
+            </div>
+            <div class="result-item">
+                <span>Range:</span>
+                <span id="range-result">-</span>
+            </div>
+        </div>
+        
+        <div class="data-visualization">
+            <h2>Sorted Data</h2>
+            <div id="sorted-data"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

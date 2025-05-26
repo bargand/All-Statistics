@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Advanced Plant Biotechnologies - Synthetic Seeds & Cryopreservation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* bg-slate-50 */
+            color: #073B4C; /* Dark Slate Blue for base text */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Default max-width, can be overridden by Tailwind classes like max-w-xl, max-w-2xl */
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px; /* Base height */
+            max-height: 400px; /* Max height */
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .section-title {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #118AB2; /* Cerulean Blue */
+            margin-bottom: 1.5rem; /* mb-6 */
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .stat-number {
+            font-size: 3rem; /* text-5xl */
+            font-weight: 700; /* font-bold */
+            line-height: 1;
+        }
+        .flow-step {
+            border: 2px solid #118AB2;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            background-color: #E0F2FE; /* Light blue bg */
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #118AB2;
+            align-self: center;
+        }
+        .icon-style {
+            font-size: 1.5rem; /* text-2xl */
+            margin-right: 0.5rem; /* mr-2 */
+        }
+        /* Energetic & Playful Palette:
+           #FF6B6B (Coral Red)
+           #FFD166 (Sunny Yellow)
+           #06D6A0 (Turquoise Green)
+           #118AB2 (Cerulean Blue)
+           #073B4C (Dark Slate Blue/Almost Black for text/background accents)
+        */
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-gradient-to-r from-[#118AB2] to-[#06D6A0] py-8 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Advanced Plant Biotechnologies</h1>
+            <p class="text-xl md:text-2xl">Market Insights: Synthetic Seed Technology & Cryopreservation</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section id="introduction" class="mb-12">
+            <div class="card text-center">
+                <h2 class="text-2xl font-semibold text-[#118AB2] mb-4">The Pressing Need for Innovation</h2>
+                <p class="text-lg mb-6">Traditional plant propagation and conservation methods face significant limitations, struggling to meet escalating global demands and combat biodiversity loss. A substantial portion of plant genetic resources remains vulnerable.</p>
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="stat-number text-[#FF6B6B]">1/3+</p>
+                        <p class="text-xl text-[#073B4C] mt-2">Of critically endangered plant species are unsuitable for conventional seed banking due to factors like recalcitrant seeds.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#073B4C] mb-2">Key Challenges with Conventional Methods:</h3>
+                        <ul class="list-none text-left space-y-2 mx-auto max-w-md">
+                            <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">⚠️</span> Low viability & poor germination rates</li>
+                            <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🍂</span> Seasonal dependency & genetic erosion</li>
+                            <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">💧</span> Inability to store "recalcitrant" seeds (e.g., many tropical fruits, temperate trees, key food crops like avocado, banana).</li>
+                            <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🐛</span> Susceptibility of field genebanks to pests, diseases, and climate change.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution-overview" class="mb-12">
+            <h2 class="section-title">The Biotechnological Frontier: A Dual Approach</h2>
+            <div class="card">
+                <p class="text-lg text-center mb-4">Synthetic seed technology and cryopreservation emerge as transformative biotechnological solutions, offering synergistic pathways to enhance plant propagation and secure long-term germplasm conservation, particularly for previously "unbankable" species.</p>
+            </div>
+        </section>
+
+        <section id="synthetic-seeds" class="mb-12">
+            <h2 class="section-title">Market Segment: Synthetic Seed Technology</h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-[#06D6A0] mb-3 text-center">Core Principle & Definition</h3>
+                    <p class="mb-4">Synthetic seeds (synseeds) are artificially encapsulated somatic embryos, shoot buds, or cell aggregates designed to mimic natural seeds. They aim to combine clonal propagation's genetic uniformity with the handling ease of traditional seeds, enabling development into whole plants *in vitro* or *ex vitro*.</p>
+                    <h3 class="text-xl font-semibold text-[#06D6A0] mb-3 text-center">Comparative Overview: Types of Synthetic Seeds</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-[#E0F2FE]">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-[#073B4C] uppercase tracking-wider">Characteristic</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-[#073B4C] uppercase tracking-wider">Desiccated Synthetic Seeds</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-[#073B4C] uppercase tracking-wider">Hydrated Synthetic Seeds</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium">Propagule Type</td>
+                                    <td class="px-6 py-4 whitespace-normal">Encapsulated/naked somatic embryos tolerant to drying</td>
+                                    <td class="px-6 py-4 whitespace-normal">Somatic embryos/propagules sensitive to drying, in hydrogel</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium">Desiccation Tolerance</td>
+                                    <td class="px-6 py-4 whitespace-normal text-[#06D6A0]">Tolerant</td>
+                                    <td class="px-6 py-4 whitespace-normal text-[#FF6B6B]">Sensitive/Recalcitrant</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium">Primary Suitability</td>
+                                    <td class="px-6 py-4 whitespace-normal">Species with desiccation-tolerant somatic embryos</td>
+                                    <td class="px-6 py-4 whitespace-normal">Recalcitrant species (many tropical crops)</td>
+                                </tr>
+                                 <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium">Storage</td>
+                                    <td class="px-6 py-4 whitespace-normal">Ambient or controlled humidity</td>
+                                    <td class="px-6 py-4 whitespace-normal">Refrigerated (4-6°C)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     <p class="mt-4 text-sm text-gray-600 text-center">This diversification addresses varied plant physiological needs, significantly expanding conservation scope.</p>
+                </div>
+
+                <div class="card lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-[#06D6A0] mb-4 text-center">Simplified Production Protocol</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                        <div class="flow-step">Somatic Embryogenesis (Induction, Development, Maturation)</div>
+                        <div class="flow-arrow hidden md:block">➔</div>
+                        <div class="flow-step md:col-start-2">Encapsulation (e.g., Sodium Alginate + CaCl2)</div>
+                        <div class="flow-arrow hidden md:block">➔</div>
+                        <div class="flow-step md:col-start-3">Incorporation of Adjuvants (Nutrients, Growth Regulators, Protectants)</div>
+                        <div class="flow-arrow hidden md:block">➔</div>
+                        <div class="flow-step md:col-start-4">Optimized Synthetic Seed Ready for Use/Storage</div>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600 text-center">The encapsulation matrix acts as an "artificial endosperm," actively supporting propagule development.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-[#06D6A0] mb-3">Key Advantages (Isolated)</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="icon-style text-[#06D6A0]">🚚</span> Ease of handling & transport</li>
+                        <li class="flex items-center"><span class="icon-style text-[#06D6A0]">💾</span> Short/medium-term storage potential</li>
+                        <li class="flex items-center"><span class="icon-style text-[#06D6A0]">🧬</span> Genetic uniformity (clonal)</li>
+                        <li class="flex items-center"><span class="icon-style text-[#06D6A0]">💰</span> Economical mass propagation of elites</li>
+                        <li class="flex items-center"><span class="icon-style text-[#06D6A0]">🌱</span> Direct field/greenhouse delivery</li>
+                        <li class="flex items-center"><span class="icon-style text-[#06D6A0]">🛡️</span> Pathogen-free material</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-[#FF6B6B] mb-3">Key Limitations (Isolated)</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">📉</span> Often low survival/germination rates</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">⏳</span> Lack of natural dormancy & stress tolerance</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🧱</span> Coating material challenges (drying, permeability)</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🧩</span> Limited standardized protocols for all species</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">💸</span> High initial R&D and optimization costs</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🚜</span> Potential mismatch with farm machinery</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="cryopreservation" class="mb-12">
+            <h2 class="section-title">Market Segment: Cryopreservation Technology</h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-[#118AB2] mb-3 text-center">Core Principle & Definition</h3>
+                    <p class="mb-4">Cryopreservation is the preservation of biological materials (cells, tissues, propagules) at ultra-low temperatures (typically -196°C in liquid nitrogen), effectively halting all metabolic activity and enabling theoretically indefinite storage without genetic change. The primary goal is to prevent lethal intracellular ice crystal formation, often through vitrification (formation of a glassy state).</p>
+                </div>
+                <div class="card">
+                     <h3 class="text-lg font-semibold text-[#118AB2] mb-3">Key Cryopreservation Techniques</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Slow Freezing:</strong> Gradual cooling before LN immersion.</li>
+                        <li><strong>Vitrification:</strong> Rapid cooling with high CPA concentrations.</li>
+                        <li><strong>Encapsulation-Dehydration:</strong> Encapsulation, sucrose preculture, desiccation, then LN.</li>
+                        <li><strong>Encapsulation-Vitrification:</strong> Combines encapsulation with vitrification.</li>
+                        <li><strong>Droplet Vitrification:</strong> Small droplets on foil for ultra-rapid cooling.</li>
+                    </ul>
+                    <p class="mt-2 text-sm text-gray-600">Selection depends on species, material, cost, and expertise.</p>
+                </div>
+                 <div class="card">
+                    <h3 class="text-lg font-semibold text-[#FF6B6B] mb-3">Key Challenges (Isolated)</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">❄️</span> Cellular damage during cooling/thawing</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🧪</span> Cryoprotective agent (CPA) toxicity</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🧬</span> Minor risk of genetic/epigenetic changes</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🦠</span> Contamination risk in some open systems</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">🎯</span> Highly species-specific protocol optimization</li>
+                        <li class="flex items-center"><span class="icon-style text-[#FF6B6B]">💰</span> Significant initial investment for equipment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="synergy" class="mb-12">
+            <h2 class="section-title">Market Synergy: The Combined Powerhouse</h2>
+            <div class="card lg:col-span-2 text-center">
+                 <p class="text-lg mb-6">Integrating synthetic seed technology with cryopreservation creates a powerful, layered approach. Encapsulation provides protection and a delivery system, while cryopreservation ensures indefinite, genetically stable storage. This synergy is vital for conserving species recalcitrant to other methods.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#06D6A0] mb-4 text-center">Key Advantages of Combined Technology</h3>
+                    <div class="chart-container h-[350px] md:h-[400px] max-w-md">
+                        <canvas id="combinedAdvantagesChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600 text-center">Illustrative breakdown of primary benefits. The combination offers robust, long-term solutions for a wide array of plant germplasm.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#06D6A0] mb-4 text-center">Demonstrated Success: Post-Cryo Viability</h3>
+                     <div class="chart-container h-[350px] md:h-[400px] max-w-md">
+                        <canvas id="successRatesChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600 text-center">Selected case studies show promising recovery rates, highlighting the potential for effective germplasm conservation in diverse species.</p>
+                </div>
+            </div>
+             <div class="card mt-8">
+                <h3 class="text-xl font-semibold text-[#118AB2] mb-3 text-center">Methodologies for Cryopreserving Synthetic Seeds</h3>
+                <p class="text-center">Primarily involves <strong>Encapsulation-Dehydration</strong> (inducing dehydration tolerance in alginate beads before LN) and <strong>Encapsulation-Vitrification</strong> (treating encapsulated propagules with CPAs for glass-state formation).</p>
+            </div>
+        </section>
+
+        <section id="market-challenges" class="mb-12">
+            <h2 class="section-title">Market Adoption: Challenges of the Integrated Approach</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#FF6B6B] mb-4 text-center">Overcoming Hurdles for Wider Application</h3>
+                    <div class="chart-container h-[350px] md:h-[400px] max-w-md">
+                        <canvas id="challengesRadarChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600 text-center">Illustrative impact assessment of key challenges. Addressing these is crucial for realizing the full market potential.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-[#FF6B6B] mb-3">Persistent Challenges Include:</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start"><span class="icon-style text-[#FF6B6B]">📉</span> Consistently achieving high survival/regeneration rates post-cryopreservation for many species.</li>
+                        <li class="flex items-start"><span class="icon-style text-[#FF6B6B]">🔬</span> Extensive species-specific optimization required for protocols.</li>
+                        <li class="flex items-start"><span class="icon-style text-[#FF6B6B]">👨‍🔬</span> Technical complexity and need for specialized skills and labor.</li>
+                        <li class="flex items-start"><span class="icon-style text-[#FF6B6B]">💸</span> Substantial initial investment for facilities and R&D, hindering commercial scale-up.</li>
+                        <li class="flex items-start"><span class="icon-style text-[#FF6B6B]">❗</span> Ensuring long-term genetic and epigenetic stability across all species.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="future-outlook" class="mb-12">
+            <h2 class="section-title">Future Market Outlook & Innovations</h2>
+            <div class="card lg:col-span-2">
+                 <p class="text-lg text-center mb-6">Continuous advancements are poised to expand the utility and impact of integrated synthetic seed and cryopreservation technologies across agriculture, forestry, and biodiversity conservation.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="card text-center bg-[#E0F2FE]">
+                    <div class="text-4xl mb-2 text-[#118AB2]">🧪</div>
+                    <h4 class="font-semibold text-[#073B4C]">Improved Cryoprotectants & Encapsulants</h4>
+                    <p class="text-sm">New, less toxic CPAs (nanoparticles, proteins) and novel encapsulation materials (self-breaking beads).</p>
+                </div>
+                <div class="card text-center bg-[#E0F2FE]">
+                    <div class="text-4xl mb-2 text-[#118AB2]">🤖</div>
+                    <h4 class="font-semibold text-[#073B4C]">Automation & High-Throughput</h4>
+                    <p class="text-sm">Automated encapsulation and handling systems to reduce labor, cost, and scale up production.</p>
+                </div>
+                <div class="card text-center bg-[#E0F2FE]">
+                    <div class="text-4xl mb-2 text-[#118AB2]">🧬</div>
+                    <h4 class="font-semibold text-[#073B4C]">Omics & Molecular Tools</h4>
+                    <p class="text-sm">Deeper understanding of freezing tolerance and genetic stability to refine protocols.</p>
+                </div>
+                <div class="card text-center bg-[#E0F2FE]">
+                    <div class="text-4xl mb-2 text-[#118AB2]">✂️</div>
+                    <h4 class="font-semibold text-[#073B4C]">CRISPR Gene Editing</h4>
+                    <p class="text-sm">Integration for targeted trait enhancement (yield, stress tolerance) in propagules before cryopreservation.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold text-[#06D6A0] mb-2">Economic Impact Highlight</h3>
+                    <p class="stat-number text-[#06D6A0]">$1-2</p>
+                    <p class="text-lg text-[#073B4C] mt-1">Approx. long-term maintenance cost per sample per year after initial cryobank setup, offering significant cost-efficiency over decades.</p>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-semibold text-[#118AB2] mb-3 text-center">Broader Market Implications</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-3 rounded bg-slate-100 text-center">
+                            <div class="text-3xl mb-1">🌾</div> <p class="font-medium">Food Security</p>
+                        </div>
+                        <div class="p-3 rounded bg-slate-100 text-center">
+                            <div class="text-3xl mb-1">🌍</div> <p class="font-medium">Agrobiodiversity & Climate Resilience</p>
+                        </div>
+                        <div class="p-3 rounded bg-slate-100 text-center">
+                            <div class="text-3xl mb-1">🌳</div> <p class="font-medium">Ecosystem Restoration & Forestry</p>
+                        </div>
+                        <div class="p-3 rounded bg-slate-100 text-center">
+                            <div class="text-3xl mb-1">🔬</div> <p class="font-medium">Accelerated Breeding Programs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="mb-12">
+            <div class="card bg-gradient-to-r from-[#073B4C] to-[#118AB2] text-white">
+                <h2 class="text-3xl font-bold text-center mb-4">An Indispensable Biotechnological Future</h2>
+                <p class="text-lg text-center">The integration of synthetic seed technology and cryopreservation represents a powerful, indispensable advancement for plant propagation and genetic resource conservation. While challenges remain, ongoing innovation positions this combined approach as a cornerstone for future food security, sustainable agriculture, and global biodiversity preservation, safeguarding the plant kingdom for generations to come.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 bg-slate-200 text-sm text-[#073B4C]">
+        <p>Infographic based on the report: "Advanced Plant Biotechnologies: Integrating Synthetic Seed Technology with Cryopreservation for Enhanced Germplasm Management".</p>
+        <p>For illustrative and informational purposes only.</p>
+    </footer>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#073B4C', // Dark Slate Blue
+                        font: { size: 12 }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    backgroundColor: '#073B4C',
+                    titleColor: '#FFFFFF',
+                    bodyColor: '#FFFFFF',
+                }
+            },
+            scales: {
+                y: {
+                    ticks: { color: '#073B4C', font: { size: 10 } },
+                    grid: { color: '#E2E8F0' } // slate-200
+                },
+                x: {
+                    ticks: { color: '#073B4C', font: { size: 10 } },
+                    grid: { display: false }
+                }
+            }
+        };
+        
+        function wrapLabel(label, maxWidth) {
+            if (label.length <= maxWidth) return label;
+            const words = label.split(' ');
+            let lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth && currentLine.length > 0) {
+                    lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else {
+                    currentLine += word + ' ';
+                }
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        // Chart 1: Combined Advantages
+        const combinedAdvantagesCtx = document.getElementById('combinedAdvantagesChart').getContext('2d');
+        const combinedAdvantagesData = {
+            labels: [
+                wrapLabel('Long-Term Germplasm Conservation', 16), 
+                wrapLabel('Genetic Stability & Uniformity', 16), 
+                wrapLabel('Conservation of Difficult Species', 16), 
+                wrapLabel('Cost & Space Efficiency (Long-term)', 16),
+                wrapLabel('Enhanced Handling & Disease-Free Material', 16)
+            ],
+            datasets: [{
+                label: 'Impact Score (Illustrative)',
+                data: [30, 25, 20, 15, 10], // Illustrative percentages
+                backgroundColor: ['#06D6A0', '#118AB2', '#FFD166', '#FF6B6B', '#4CC9F0'], // Palette + one more
+                borderColor: '#FFFFFF',
+                borderWidth: 2
+            }]
+        };
+        new Chart(combinedAdvantagesCtx, {
+            type: 'doughnut',
+            data: combinedAdvantagesData,
+            options: { ...commonChartOptions, plugins: { ...commonChartOptions.plugins, legend: { position: 'bottom' } } }
+        });
+
+        // Chart 2: Success Rates
+        const successRatesCtx = document.getElementById('successRatesChart').getContext('2d');
+        const successRatesData = {
+            labels: [wrapLabel('Zephyranthes grandiflora',16), wrapLabel('Zephyranthes atamasca',16), wrapLabel('Myrtus communis L.',16)],
+            datasets: [{
+                label: 'Post-Cryo Viability/Conversion (%)',
+                data: [54, 48, 73], // Using mid-point for 70-75%
+                backgroundColor: ['#06D6A0', '#118AB2', '#FFD166'],
+                borderColor: ['#05A679', '#0D708C', '#EAA936'],
+                borderWidth: 1,
+                borderRadius: 4,
+            }]
+        };
+        new Chart(successRatesCtx, {
+            type: 'bar',
+            data: successRatesData,
+            options: { ...commonChartOptions, scales: { ...commonChartOptions.scales, y: { ...commonChartOptions.scales.y, beginAtZero: true, max: 100 } } }
+        });
+        
+        // Chart 3: Challenges Radar Chart
+        const challengesRadarCtx = document.getElementById('challengesRadarChart').getContext('2d');
+        const challengesRadarData = {
+            labels: [
+                wrapLabel('Low Survival/ Regeneration',16), 
+                wrapLabel('Species-Specific Optimization',16), 
+                wrapLabel('Technical Complexity',16), 
+                wrapLabel('Initial Investment Cost',16), 
+                wrapLabel('Genetic Stability Concerns',16)
+            ],
+            datasets: [{
+                label: 'Challenge Severity (Illustrative Score 1-5, 5=High)',
+                data: [4, 5, 4, 4, 3], // Illustrative scores
+                fill: true,
+                backgroundColor: 'rgba(255, 107, 107, 0.2)', // FF6B6B with alpha
+                borderColor: '#FF6B6B',
+                pointBackgroundColor: '#FF6B6B',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#FF6B6B'
+            }]
+        };
+        new Chart(challengesRadarCtx, {
+            type: 'radar',
+            data: challengesRadarData,
+            options: {
+                ...commonChartOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: '#CBD5E1' }, // slate-300
+                        grid: { color: '#E2E8F0' }, // slate-200
+                        pointLabels: { 
+                            font: { size: 10 }, color: '#073B4C',
+                            callback: function(label) { // Custom callback for point labels if they are arrays
+                                if (Array.isArray(label)) return label; // Already an array of strings
+                                return wrapLabel(label, 10); // Wrap if it's a single string
+                            }
+                        },
+                        ticks: {
+                            backdropColor: 'transparent',
+                            color: '#073B4C',
+                            stepSize: 1,
+                            font: {size: 8}
+                        },
+                        min: 0,
+                        max: 5
+                    }
+                },
+                plugins: { ...commonChartOptions.plugins, legend: { position: 'bottom' } }
+            }
+        });
+
+    </script>
+</body>
+</html>

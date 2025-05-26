@@ -125,3 +125,5 @@ document.addEventListener('DOMContentLoaded', function() {
         return sortedData[sortedData.length - 1] - sortedData[0];
     }
 });
+
+console.log(78)

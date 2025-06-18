@@ -126,4 +126,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-console.log(6)
+console.log(7)
